@@ -17,7 +17,7 @@ import base64
 
 warnings.filterwarnings('ignore')
 
-# ---------- CONFIGURAÇÃO DA PÁGINA STREAMLIT ----------
+# --------- CONFIGURAÇÃO DA PÁGINA STREAMLIT ----------
 st.set_page_config(
     page_title="Projeção de Câmbio - ML & Ensemble",
     page_icon="💱",
