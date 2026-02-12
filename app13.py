@@ -257,6 +257,14 @@ def calculate_rsi(series, window=14):
 
 # ---------- FUNÇÕES DE COTAÇÃO ----------
 def buscar_cotacao_twelve(par_moedas, api_key):
+    # Se o usuário não forneceu chave, tenta pegar dos secrets do Streamlit
+    if not api_key:
+        try:
+            api_key = st.secrets["TWELVE_API_KEY"]
+        except:
+            st.error("❌ Chave da API Twelve Data não configurada. Configure nos secrets do Streamlit ou digite uma chave.")
+            return None
+    
     try:
         simbolos = {'USD/BRL': 'USD/BRL', 'EUR/BRL': 'EUR/BRL', 'GBP/BRL': 'GBP/BRL', 'JPY/BRL': 'JPY/BRL'}
         simbolo = simbolos.get(par_moedas)
@@ -1001,8 +1009,8 @@ def main():
     st.sidebar.markdown("---")
     st.sidebar.header("💰 Cotação Atual")
     
-    # Busca automática de cotação
-    api_key = st.sidebar.text_input("API Key Twelve Data", value="e631d88e2c7348c48d13a061a73c21ab", type="password")
+    # Busca automática de cotação - sem chave hardcoded
+    api_key = st.sidebar.text_input("API Key Twelve Data", type="password", placeholder="Deixe em branco para usar a chave padrão")
     buscar_auto = st.sidebar.checkbox("Buscar cotação automaticamente", value=True)
     
     cotacao_inicial = None
