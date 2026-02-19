@@ -1,19 +1,17 @@
 setuptools==69.5.1
 wheel==0.43.0
 streamlit==1.37.1
-pandas==2.2.2
-numpy==1.26.0
-matplotlib==3.8.0
-seaborn==0.13.0
-statsmodels==0.14.4
-scikit-learn==1.3.0
-yfinance==0.2.33
-requests==2.31.0
-python-dateutil==2.8.2
-openpyxl==3.1.2
-gdown==4.6.0
-
-
+pandas==2.2.3          # versão mais recente compatível
+numpy>=2.1.0           # primeira versão com wheels para Python 3.13
+matplotlib==3.9.2      # compatível
+seaborn==0.13.2        # compatível
+statsmodels==0.14.4    # verifique se há versão mais nova
+scikit-learn==1.5.2    # compatível
+yfinance==0.2.44
+requests==2.32.3
+python-dateutil==2.9.0
+openpyxl==3.1.5
+gdown==4.7.3
 
 
 
