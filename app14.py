@@ -67,8 +67,8 @@ def obter_parametros(tipo_analise, par_moedas):
     parametros_base = {
         'MENSAL': {
             'USD/BRL': {
-                'juros_brasil': 15.00, 'juros_exterior': 4.25,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.80,
+                'juros_brasil': 15.00, 'juros_exterior': 3.75,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.70,
                 'volatilidade': 2.1, 'commodity_weight': 0.25,
                 'arima_order': (2,1,2), 'periodos_projecao': 12,
                 'n_simulacoes': 10000, 'moeda_base': 'USD',
@@ -76,7 +76,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'EUR/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 2.15,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.20,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.20,
                 'volatilidade': 1.8, 'commodity_weight': 0.18,
                 'arima_order': (2,1,2), 'periodos_projecao': 12,
                 'n_simulacoes': 10000, 'moeda_base': 'EUR',
@@ -84,7 +84,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'GBP/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 4.00,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.50,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.50,
                 'volatilidade': 1.9, 'commodity_weight': 0.15,
                 'arima_order': (2,1,2), 'periodos_projecao': 12,
                 'n_simulacoes': 10000, 'moeda_base': 'GBP',
@@ -92,7 +92,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'JPY/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 0.50,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 1.50,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 1.50,
                 'volatilidade': 1.5, 'commodity_weight': 0.08,
                 'arima_order': (2,1,2), 'periodos_projecao': 12,
                 'n_simulacoes': 10000, 'moeda_base': 'JPY',
@@ -102,7 +102,7 @@ def obter_parametros(tipo_analise, par_moedas):
         'DIARIA': {
             'USD/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 4.25,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.80,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.80,
                 'volatilidade_diaria': 0.015, 'commodity_weight': 0.25,
                 'arima_order': (1,1,1), 'periodos_projecao': 12,
                 'n_simulacoes': 5000, 'moeda_base': 'USD',
@@ -110,7 +110,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'EUR/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 2.15,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.20,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.20,
                 'volatilidade_diaria': 0.012, 'commodity_weight': 0.18,
                 'arima_order': (1,1,1), 'periodos_projecao': 12,
                 'n_simulacoes': 5000, 'moeda_base': 'EUR',
@@ -118,7 +118,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'GBP/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 4.00,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.50,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.50,
                 'volatilidade_diaria': 0.013, 'commodity_weight': 0.15,
                 'arima_order': (1,1,1), 'periodos_projecao': 12,
                 'n_simulacoes': 5000, 'moeda_base': 'GBP',
@@ -126,7 +126,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'JPY/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 0.50,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 1.50,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 1.50,
                 'volatilidade_diaria': 0.010, 'commodity_weight': 0.08,
                 'arima_order': (1,1,1), 'periodos_projecao': 12,
                 'n_simulacoes': 5000, 'moeda_base': 'JPY',
@@ -136,7 +136,7 @@ def obter_parametros(tipo_analise, par_moedas):
         'HORARIA': {
             'USD/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 4.25,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.80,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.80,
                 'volatilidade_horaria': 0.002, 'commodity_weight': 0.25,
                 'arima_order': (1,1,0), 'periodos_projecao': 24,
                 'n_simulacoes': 2000, 'moeda_base': 'USD',
@@ -144,7 +144,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'EUR/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 2.15,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.20,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.20,
                 'volatilidade_horaria': 0.0015, 'commodity_weight': 0.18,
                 'arima_order': (1,1,0), 'periodos_projecao': 24,
                 'n_simulacoes': 2000, 'moeda_base': 'EUR',
@@ -152,7 +152,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'GBP/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 4.00,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 2.50,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 2.50,
                 'volatilidade_horaria': 0.0018, 'commodity_weight': 0.15,
                 'arima_order': (1,1,0), 'periodos_projecao': 24,
                 'n_simulacoes': 2000, 'moeda_base': 'GBP',
@@ -160,7 +160,7 @@ def obter_parametros(tipo_analise, par_moedas):
             },
             'JPY/BRL': {
                 'juros_brasil': 15.00, 'juros_exterior': 0.50,
-                'inflacao_brasil': 4.80, 'inflacao_exterior': 1.50,
+                'inflacao_brasil': 4.44, 'inflacao_exterior': 1.50,
                 'volatilidade_horaria': 0.0010, 'commodity_weight': 0.08,
                 'arima_order': (1,1,0), 'periodos_projecao': 24,
                 'n_simulacoes': 2000, 'moeda_base': 'JPY',
